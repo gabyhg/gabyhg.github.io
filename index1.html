@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Assignment #1</title>
+  <meta name="description" content="Primitives">
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+</head>
+
+<body>
+
+ <a-scene background="color: #100023">
+    <a-entity id="rain" particle-system="preset: stars; color: red; particleCount: 1000" position="0 0 0"></a-entity>
+    <a-box position="-2.235 5.640 -5.090" animation="property: object3D.position.y; to: 15.2; dir: alternate; dur: 2000; loop: true" rotation="0 45 0" color="#6200fc" scale="6 6 6" dynamic-body></a-box>
+    <a-cylinder position="-8.135 3.869 -0.719" animation="property: rotation; to: 45 360 0; loop: true; dur: 10000; dir: reverse" rotation="30 45 80" color="#c065ff" scale="3 3 3" dynamic-body></a-cylinder>
+    <a-cylinder position="0 0 0" rotation="5 0 0" color="#fe0000" scale="0.5 3 0.5" dynamic-body></a-cylinder>
+    <a-cone position="-5 7 -9" animation="property: rotation; to: 45 360 80; loop: true; dur: 10000; dir: reverse" rotation="30 45 100" color="#ff006a" dynamic-body></a-cone>
+    <a-sphere position="7 -3 -10" animation="property: object3D.position.x; to: 9.2; dir: alternate; dur: 1000; loop: true" rotation="30.380 45 100" scale="3.5 3.5 3.5" color="#00007a" dynamic-body></a-sphere>
+    <a-ring position="1 9 -0.10" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; dir: reverse" rotation="30.380 45 100" color="#ac00a9" dynamic-body></a-ring>
+    <a-dodecahedron position="8.524 6.704 2.261" animation="property: object3D.position.z; to: 6.2; dir: alternate; dur: 2000; loop: true" rotation="80 45 40" color="#a00000" scale="3 3 3" dynamic-body></a-dodecahedron>
+    <a-icosahedron position="4.899 4.385 -4" animation="property: rotation; to: 25 360 0; loop: true; dur: 10000; dir: reverse" rotation="80 45 40" color="#ff00fe" dynamic-body></a-icosahedron>
+    <a-octahedron position="3.262 6.608 2.08" animation="property: rotation; to: 50 360 0; loop: true; dur: 10000; dir: reverse" rotation="80 45 40" color="#5b006c" scale="2 2 2" dynamic-body></a-octahedron>
+    <a-tetrahedron position="7.792 5.213 -7" animation="property: rotation; to: 30 360 0; loop: true; dur: 10000; dir: reverse" rotation="90 45 90" color="#4e55ff" scale="4 4 4" dynamic-body></a-tetrahedron>
+    <a-torus position="7.575 15.192 -2.085" animation="property: rotation; to: 150 360 150; loop: true; dur: 9000; dir: reverse" rotation="90 45 90" color="#650044" scale="5 5 5" dynamic-body></a-torus>
+    <a-triangle position="6 6 -4" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; dir: reverse" rotation="40 45 90" color="#0000fe" scale="1 1 1" dynamic-body></a-triangle>
+    <a-circle position="1 3 -0.3" rotation="20 45 60" color="#9eff00" dynamic-body></a-circle>
+    <a-circle position="0.036 11.388 -0.473" rotation="20 45 60" color="#9eff00" dynamic-body></a-circle>
+    <a-circle position="4.755 7.942 -1.463" rotation="20 45 60" color="#9eff00" dynamic-body></a-circle>
+    <a-circle position="-6.634 11.018 -6.289" rotation="20 45 60" color="#9eff00" dynamic-body></a-circle>
+    <a-circle position="-4.437 5.923 -1.117" rotation="20 45 60" color="#9eff00" dynamic-body></a-circle>
+    <a-sky id="image-360" radius="1.0" animation="property: rotation; to: 50 360 0; loop: true; dur: 30000; dir: reverse" position="2.208 6.018 0.890" rotation="90 45 90" scale="25 25 25" src="assets/img/squares.jpg"></a-sky>
+
+ </a-scene> 
+</body>
+
+</html>
